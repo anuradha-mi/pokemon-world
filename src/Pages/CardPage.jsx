@@ -65,7 +65,7 @@ function CardPage() {
   const [selectedPokemon, setSelectedPokemon] = useState(null);
 
   return (
-    <div className="flex items-center justify-center gap-10 min-h-screen bg-linear-to-b from-slate-900 to-slate-800 p-10">
+    <div className="flex flex-wrap items-center justify-center gap-8 md:gap-10 h-screen w-full bg-gradient-to-b from-[#0f172a] via-[#090f19] to-[#070b14] p-6 pt-20 sm:p-10 sm:pt-24 box-border overflow-y-auto">
       {pokemons.map((poke, index) => (
         <Card
           key={index}
